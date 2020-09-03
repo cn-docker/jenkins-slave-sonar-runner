@@ -5,7 +5,7 @@ RUN apk add --no-cache git subversion mercurial wget curl unzip openssh ca-certi
     rm -rf /var/cache/apk/*
 
 # Install Sonar Runner
-ENV SONAR_SCANNER_VERSION 4.3.0.2102
+ENV SONAR_SCANNER_VERSION 4.4.0.2170
 RUN mkdir -p /opt && \
     wget https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
     unzip sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip && \
